@@ -1,0 +1,112 @@
+.blur {
+  filter: blur(2px);
+}
+
+#like--btn {}
+
+/*
+#like--Btn:hover {
+  transition: background-color .7s;
+  box-shadow: 1px 3px 5px black;
+}
+
+#like--Btn:active {
+  box-shadow: 0px 0px 3px black;
+} */
+
+/* .clickable {
+  background-color: transparent;
+  width: 80%;
+  height: 40px;
+  border-radius: 6px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+} */
+
+#main .showie {
+  position: relative;
+  top: 5px;
+}
+
+.showie:hover .drpdwn-menu {
+  display: block;
+}
+
+.drpdwn-menu {
+  position: absolute;
+  width: 115px;
+  height: 21px;
+  border-radius: 24%;
+  /* background-color: rgba(0, 0, 0, .4); */
+  border-bottom: 1px dashed black;
+  /* margin-top: -15%;
+  margin-left: 5%; */
+  top: -52px;
+  left: 10px;
+  display: none;
+  /* transform: translate(-50%, -50%); */
+  /* visibility: hidden; */
+  /* -webkit-transition: .5s all;
+  -webkit-transition-delay: 5s;
+  -moz-transition: .5s all;
+  -moz-transition-delay: 5s;
+  -ms-transition: .5s all;
+  -ms-transition-delay: 5s;
+  -o-transition: .5s all;
+  -o-transition-delay: 5s;
+  transition: .5s all;
+  transition-delay: 5s; */
+}
+
+.animate {
+  transform-origin: center;
+  animation: test .8s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes test {
+  0% {
+    transform: scale(.2);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.drpdwn-menu a:nth-child(1) {
+  /* top: -20px; */
+  left: 0;
+}
+
+.drpdwn-menu a:nth-child(2) {
+  left: 27px;
+  /* top: -20px; */
+}
+
+.drpdwn-menu a:nth-child(3) {
+  left: 94px;
+  /* top: -20px; */
+}
+
+.drpdwn-menu a:nth-child(4) {
+  left: 60px;
+  /* top: -20px; */
+}
+
+.drpdwn-menu a {
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+  font-size: 2rem;
+}
+
+.drpdwn-menu a:hover {
+  transform: scale(1.4) translate(0, -8px);
+  transition: all .1s linear;
+  opacity: 1;
+}
